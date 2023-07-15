@@ -1,0 +1,71 @@
+* {
+  box-sizing: border-box;
+}
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: white !important;
+  opacity: 1; /* Firefox */
+}
+.App {
+  text-align: center;
+  height: 100vh;
+  background-image: url("./../public/assets/1.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: "work sans";
+  position: relative;
+}
+.login {
+  width: 300px;
+  height: 300px;
+  background: rgba(154, 148, 148, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(154, 148, 148, 0.3);
+}
+
+input {
+  background: rgba(154, 148, 148, 0.2) !important;
+  font-weight: bold !important;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+.btn {
+  cursor: pointer !important;
+}
+
+.btn-left {
+  float: left;
+}
+.btn-right {
+  float: right;
+}
+.animate {
+  position: absolute;
+  top: 200px;
+  right: 2px;
+  animation: slideDown 2s infinite alternate-reverse;
+}
+@keyframes slideDown {
+  0% {
+    top: 200px;
+  }
+  100% {
+    top: 210px;
+  }
+}
